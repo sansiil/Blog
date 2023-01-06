@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    padding:0;
+    margin:3% 5% 2% 5%;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    
+    border-style: solid;
+}
+.top-mid {
+    display: flex;
+}
