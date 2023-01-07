@@ -31,7 +31,7 @@ h4{
 .top-mid nav{
     display:flex;
 }
-.top-mid nav ul{
+.top-mid nav ul, footer nav ul{
     list-style-type: none;
     display:flex;
 }
@@ -51,12 +51,14 @@ a{
     margin-right:7px;
     width:17%;
 }
-.newpost button{
+ button{
     color:white;
     background: black;
     padding:12px 28px;
     border-radius: 4px;
+    cursor:pointer;
 }
+
 .mobile-cross{
     display:none;
 }
@@ -80,8 +82,13 @@ a{
     border-bottom:1.7px rgb(179, 175, 175) solid;
 }
 .left-down-items{
-    justify-content: space-between;
     margin: 0 0 17px 8px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.left-down a{
+    margin:0;
 }
 .left-down{
     margin-top:17px;
@@ -89,6 +96,10 @@ a{
 }
 .left-down img{
     width:87%;
+    
+}
+.left-down a img{
+    filter: opacity(50%);
 }
 .mid{
     width:65%;
@@ -143,10 +154,6 @@ span,.container figcaption{
 }
  .yellow button {
     white-space: nowrap;
-    color:white;
-    background: black;
-    padding:8px 21px;
-    border-radius:4px;
     margin-right:10px;
 }
 .yellow{
@@ -205,3 +212,53 @@ span,.container figcaption{
 .right-down li{
     margin-bottom: 10px;
 }
+.popup{
+    border:1px rgb(214, 214, 214) solid;
+    padding:19px 0 19px 17px;
+    width:23%;
+    font-size:14px;
+    border-radius: 4px;
+    position:fixed;
+    right:5%;
+    top:50%;
+    background: white;
+}
+.popup-top{
+    display:flex;
+    align-items: center;
+    margin-bottom:7px;
+}
+.popup-top figcaption{
+    margin-left:7px;
+    color:black;
+    font-weight:700;
+}
+.popup-mid{
+    width:85%;
+    margin-bottom:13px;
+}
+.popup-mid span{
+    color:black;
+    font-weight:700;
+}
+.popup-button #accept{
+    padding-left:13px;
+    padding-right:13px;
+}
+#decline{
+     background:white;
+     border:1px grey solid;
+     color:rgb(130,133,142);
+     margin-left:5px;
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    color:black;
+    font-size:14.5px;
+}
+footer a{
+    color:black;
+}
+
+
