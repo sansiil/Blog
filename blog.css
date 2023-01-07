@@ -63,10 +63,10 @@ a{
 .mostcontent{
     display:flex;
     margin-top:3%;
+    justify-content: space-between;
 }
 .leftside{
     width:12%;
-    border: 2px red solid;
 }
 .left-top figure,.left-down-items{
     display: flex;
@@ -91,19 +91,18 @@ a{
     width:87%;
 }
 .mid{
-    border:3px black solid;
-    margin:0 0 0 30px;
-    width:67%;
+    width:65%;
 }
 .container{
     display:flex;
-    padding: 2% 2% 3% 2%;
-    border-style:solid; 
+    padding: 4% 3% 3% 3%;
+    border:1px grey solid;
+    border-radius: 4px;
     justify-content: space-between;   
+    width:100%;
 }
 .container-left{
     width:54%;
-    border-style: solid;
 }
 h3{
     color:black;
@@ -113,7 +112,6 @@ h3{
 .profile{
     display: flex;
     align-items: center;
-    color:black;
     font-weight: 700;
     font-size: 12.5px;
     margin-top:10px;
@@ -122,10 +120,88 @@ h3{
     width:7.5%;
     margin-right:7px;
 }
-span{
+span,.container figcaption{
     color:rgb(130,133,142);
+    font-size:12.5px;
 }
 .container-left p{
     font-size: 14px;
     width:95%;
+    
+}
+.container-right img{
+    border-radius: 4px;
+    height:73%;
+    width:73%;
+}
+.container-right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width:30%;  
+}
+ .yellow button {
+    white-space: nowrap;
+    color:white;
+    background: black;
+    padding:8px 21px;
+    border-radius:4px;
+    margin-right:10px;
+}
+.yellow{
+    background:rgba(246,202,69,0.9);
+    color:black;
+    margin:3% 0;
+}
+.yellow h3{
+    width:84%;
+}
+.yellow-left-bottom p{
+    font-size:12.5px;
+    font-weight:500;
+    
+}
+.yellow-left-bottom{
+    margin-top:14px;
+}
+.yellow-img img{
+    justify-content: flex-end;
+    padding-bottom: 0;
+    height:150px;
+}
+.right{
+    width:13%;
+
+}
+.right ul{
+    list-style-type: none;
+}
+.searchpost input{
+    width:100%;
+    background-image: url("Icons/General Icons/search.png");
+    background-position:70%;
+    background-repeat: no-repeat;
+    background-size:14%;
+    border-radius: 4px;
+    padding:11px 7px;
+    border: 1px grey solid;
+}
+::placeholder{
+    color:rgb(130,133,142);
+    font-size:12.5px;
+}
+.right-down{
+    border: 1px grey solid;
+    border-radius: 4px;
+    margin-top:20px;
+    padding:14px 14px;
+}
+.right-down h4{
+    border-bottom:1px rgb(202, 194, 194) solid;
+    margin-bottom: 17px;
+    padding-bottom: 10px;
+}
+.right-down li{
+    margin-bottom: 10px;
 }
