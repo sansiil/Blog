@@ -107,7 +107,7 @@ a{
 .container{
     display:flex;
     padding: 4% 3% 3% 3%;
-    border:1px grey solid;
+    border:1px rgb(214, 214, 214) solid;
     border-radius: 4px;
     justify-content: space-between;   
     width:100%;
@@ -160,6 +160,7 @@ span,.container figcaption{
     background:rgba(246,202,69,0.9);
     color:black;
     margin:3% 0;
+    border:none;
 }
 .yellow h3{
     width:84%;
@@ -192,14 +193,14 @@ span,.container figcaption{
     background-size:14%;
     border-radius: 4px;
     padding:11px 7px;
-    border: 1px grey solid;
+    border:1px rgb(214, 214, 214) solid;
 }
 ::placeholder{
     color:rgb(130,133,142);
     font-size:12.5px;
 }
 .right-down{
-    border: 1px grey solid;
+    border:1px rgb(214, 214, 214) solid;
     border-radius: 4px;
     margin-top:20px;
     padding:14px 14px;
