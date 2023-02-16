@@ -60,6 +60,7 @@ a{
     padding:12px 28px;
     border-radius: 4px;
     cursor:pointer;
+    white-space: nowrap;
 }
 
 .mobile-cross{
@@ -156,7 +157,7 @@ span,.container figcaption{
     width:30%;  
 }
  .yellow button {
-    white-space: nowrap;
+   
     margin-right:10px;
 }
 .yellow{
@@ -319,24 +320,70 @@ footer{
 footer a{
     color:black;
 }
-@media (max-width:999px){
-    .top-mid,.newpost,.leftside,.right,.container-right figcaption{
+button{
+    border:none;
+}
+.yellow{
+    padding-bottom: 0;
+}
+.yellow-img{
+    display: flex;
+    align-items: end;
+    width:30%;
+    
+}
+.yellow-left{
+    padding-bottom: 20px;
+}
+.popup a{
+    text-decoration: underline;
+    color:black;
+}
+.yellow a{
+    color:black;
+}
+.profile figcaption{
+    cursor: pointer;
+}
+@media (max-width:1100px){
+    .top-mid,.newpost,.leftside,.right{
         display:none;
     }
-    header{
-        border-style: solid;
+    .container{
+        width:100%;
     }
     .name{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        border-style: solid;
+    }
+    footer .name{
+        width: fit-content;
     }
     #ham{
         display: block;
     }
     .mostcontent,.mid{
-        border-style: solid;
+        width:100%;
+    }
+    .popup{
+        width:45%;
+        top:10%;
+    }
+}
+@media (max-width:599px){
+    .top-mid,.newpost,.leftside,.right,.container-right figcaption{
+        display:none;
+    }
+    .name{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #ham{
+        display: block;
+    }
+    .mostcontent,.mid{
         width:100%;
     }
     .container{
@@ -346,21 +393,20 @@ footer a{
         width:100%;
     }
     .container-right img{
-        border-style: solid;
         width:100%;
         max-height:150px;
     }
     .container-left h3 ,.container-left p{
-        border-style: solid;
         width:100%;
     }
     .yellow{
         flex-direction: column;
         padding-bottom: 0;
+        align-items: center;
     }
     .yellow-img{
        display: flex;
-       justify-content: center;
+       width:fit-content;
     }
     .black-left{
         text-align: center;
@@ -380,19 +426,24 @@ footer a{
         align-items: center;
     }
     .black{
-        border-style: solid;
         padding-right:4%;
     }
     ul{
-        border-style: solid;
         display: flex;
         gap:14px;
     }
     ul li a{
         margin:0;
     }
-    .yellow a{
-        color:black;
+    
+    .popup{
+        width:90%;
+        top:10%;
+    }
+    
+    .popup button{
+        border-radius: 7px;
+        border:none;
     }
 
 }
