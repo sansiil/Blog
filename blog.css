@@ -319,3 +319,80 @@ footer{
 footer a{
     color:black;
 }
+@media (max-width:999px){
+    .top-mid,.newpost,.leftside,.right,.container-right figcaption{
+        display:none;
+    }
+    header{
+        border-style: solid;
+    }
+    .name{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-style: solid;
+    }
+    #ham{
+        display: block;
+    }
+    .mostcontent,.mid{
+        border-style: solid;
+        width:100%;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .container-left,.container-right,.black-left,.black-right{
+        width:100%;
+    }
+    .container-right img{
+        border-style: solid;
+        width:100%;
+        max-height:150px;
+    }
+    .container-left h3 ,.container-left p{
+        border-style: solid;
+        width:100%;
+    }
+    .yellow{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .yellow-img{
+       display: flex;
+       justify-content: center;
+    }
+    .black-left{
+        text-align: center;
+        margin-bottom:30px;
+    }
+    .black{
+        flex-direction: column;
+    }
+    .footer-margin{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-margin .name {   
+       max-width: fit-content;  
+    }
+    .footer-margin{
+        align-items: center;
+    }
+    .black{
+        border-style: solid;
+        padding-right:4%;
+    }
+    ul{
+        border-style: solid;
+        display: flex;
+        gap:14px;
+    }
+    ul li a{
+        margin:0;
+    }
+    .yellow a{
+        color:black;
+    }
+
+}
