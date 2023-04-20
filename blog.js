@@ -1,4 +1,4 @@
- function cook(num){
+ const cook=(num)=>{
     if (num === 2){
         const cookie=document.getElementById('pp');
         if(cookie.style.display==="none"){
@@ -14,6 +14,38 @@
         if (ham.style.display==='block' ||ham.style.display===''){
             cross.style.display='block';
             ham.style.display='none';
+             
+            if(!document.querySelector('.menu')){
+                //new div for ham menu
+              const section=document.createElement('section');
+              section.classList='menu';
+
+              const menutop=document.createElement('div');
+              menutop.classList='menu-top';
+
+              const menubottom=document.createElement('div');
+              menubottom.classList='menu-bottom';
+              
+              const left=document.getElementById('ls');
+              const right=document.querySelector('.right');
+              menutop.append(left,right);
+
+              if (left.style.display==='none'|| left.style.display===''){
+                left.style.display='block';
+                
+            }
+            else{
+                left.style.display='none';
+            }
+            section.append(menutop,menubottom);
+            document.body.appendChild(section);
+           
+            
+           
+            };
+
+           
+            
 
         }
         else{
