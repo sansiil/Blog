@@ -359,7 +359,6 @@ gap:10px;
 .leftside,.right{
     width:fit-content;
 }
-
 .menu-top{
     display: flex;
     justify-content: space-between;
