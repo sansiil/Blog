@@ -80,5 +80,66 @@
         
     };
 };
+
+let cvalue='1';
+//for pagination
+//seclector all contains array so foreach to acess each elem
+
+document.querySelectorAll('.link').forEach(link=>{
+
+    link.addEventListener('click',()=>{
+
+        //active class when clicked and cvalue is clicked elem value
+        link.classList.add('active');
+        cvalue=link.getAttribute('value'); 
+        
+        
+        document.querySelectorAll('.link').forEach(link=>{
+            if(cvalue!==link.getAttribute('value')){
+              link.classList.remove('active');
+            };
+        });
+    });
     
+});
+document.querySelectorAll('.next button').forEach(button=>{
+    button.addEventListener('click',()=>{
+
+        //for back button
+        if(button.classList.contains('btn-1')){
+              
+            if(cvalue>1){
+                cvalue--;
+                document.querySelectorAll('.link').forEach(a=>{
+                    if(a.getAttribute('value')==cvalue){
+                        a.classList.add('active');
+                        a.click();
+                    }
+                    else{
+                        a.classList.remove('active');
+                    };
+                });
+            
+            };
+        }
+        //for next button
+        else{
+            if(cvalue<5){
+                cvalue++;
+                document.querySelectorAll('.next a').forEach(a=>{
+                    if(cvalue==a.getAttribute('value')){
+                        a.classList.add('active');
+                        a.click();
+                    }
+                    else{
+                        a.classList.remove('active');
+                    };
+                });
+            };
+        };
+    });
+});
+  
+
+
 
